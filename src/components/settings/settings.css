@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body, .section-settings {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .section-settings {
+    align-items: center;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+  }
+  .section-settings form {
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    padding: 25px;
+    width: 70%;
+  }
+  .section-settings form h2 {
+    margin: 0;
+    font-size: 3.5em;
+  }
+  .section-settings form label {
+    font-size: 1.5em;
+    display: inline-block;
+    width: 100px;
+  }
+  .section-settings form div input[type=range] {
+    width: 250px;
+  }
+  .section-settings form div datalist {
+    display: flex;
+    color: black;
+    width: 250px;
+    padding: 0;
+    justify-content: space-between;
+    float: right;
+  }
+  .section-settings form button {
+    background-color: coral;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 0.3em 1.7em;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .section-settings form {
+      background-color: aqua;
+      height: 90%;
+      width: 97%;
+    }
+    .section-settings form div input[type=range] {
+      width: 200px;
+    }
+    .section-settings form div datalist {
+      width: 200px;
+    }
+  }

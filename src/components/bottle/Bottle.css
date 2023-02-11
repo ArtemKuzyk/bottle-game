@@ -1,0 +1,40 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.container .bottle {
+  background-color: gray;
+  border: 4px solid black;
+  border-radius: 0 0 50% 50%;
+  box-shadow: 4px 0px 0px bisque, -4px 0px 0px bisque, 4px -4px 0px, -4px -4px 0px;
+  height: 10em;
+  margin: 0 2em;
+  width: 4em;
+}
+.container .bottle .bottle__persent-part {
+  background-color: #ffa500;
+  background-clip: content-box;
+  height: 30%;
+  overflow: hidden;
+  width: 100%;
+}
+.container .bottle .bottle__persent-part:first-child {
+  background-color: #80ffd4;
+}
+.container .activeBottle {
+  margin-bottom: 2em;
+}
+.home-image{
+  background-image: url(../home.png);
+  background-size: 100%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
