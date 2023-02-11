@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { HashRouter } from 'react-router-dom';
 import { LocalStorageService, LS_KEYS } from './services/localStorage';
 import { BotlleSecondVersion } from './components/bottle';
 import { SettingsProvider } from './components/hooks/useSettings';
@@ -19,14 +20,16 @@ function App() {
 
   return (
     <SettingsProvider value={{settings, setSettings}}>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
+    <HashRouter basename='/'>
         <Routes>
-            <Route exact path='/' element={< Home />}></Route>
-            <Route exact path='settings' element={< FnSettings state = {{settings, setSettings}} />}></Route>
-            <Route exact path='bottle' element={< BotlleSecondVersion />}></Route>
-            {/* <Route exact path='bottle' element={< BottleContainer />}></Route> */}
+          <Route exact path='/' element={< Home />}></Route>
+          <Route exact path='settings' element={< FnSettings state = {{settings, setSettings}} />}></Route>
+          <Route exact path='bottle' element={< BotlleSecondVersion />}></Route>
+          {/* <Route exact path='bottle' element={< BottleContainer />}></Route> */}
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
+    {/* </BrowserRouter> */}
     </SettingsProvider> 
   );
 }
