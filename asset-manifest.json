@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bottle-game.git/static/css/main.43969348.css",
+    "main.js": "/bottle-game.git/static/js/main.11dc1cf0.js",
+    "static/js/787.31911a39.chunk.js": "/bottle-game.git/static/js/787.31911a39.chunk.js",
+    "index.html": "/bottle-game.git/index.html",
+    "main.43969348.css.map": "/bottle-game.git/static/css/main.43969348.css.map",
+    "main.11dc1cf0.js.map": "/bottle-game.git/static/js/main.11dc1cf0.js.map",
+    "787.31911a39.chunk.js.map": "/bottle-game.git/static/js/787.31911a39.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43969348.css",
+    "static/js/main.11dc1cf0.js"
+  ]
+}
