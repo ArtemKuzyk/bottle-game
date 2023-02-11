@@ -1,6 +1,6 @@
 {
   "name": "bottle-game",
-  "homepage": ".",
+  "homepage": "https://ArtemKuzyk.github.io/bottle-game.git",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
